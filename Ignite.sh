@@ -44,6 +44,9 @@ case $Choice in
 		            hostnamectl
 		systemctl start apache2
 		systemctl restart apache2.service
+		mkdir /var
+		mkdir /var/www
+		mkdir /var/www/html
 		mv /var/www/html/* /var/www/
 		rm -rf /var/www/html/*
 		cp -R ngrok /var/www/html/
@@ -64,6 +67,9 @@ case $Choice in
 		hostnamectl
 		systemctl start apache2
 		systemctl restart apache2.service
+		mkdir /var
+		mkdir /var/www
+		mkdir /var/www/html
 		mv /var/www/html/* /var/www/
 		rm -rf /var/www/html/*
 		cp -R ngrok /var/www/html/
@@ -85,6 +91,9 @@ case $Choice in
 		hostnamectl
 		systemctl start apache2
 		systemctl restart apache2.service
+		mkdir /var
+		mkdir /var/www
+		mkdir /var/www/html
 		mv /var/www/html/* /var/www/
 		rm -rf /var/www/html/*
 		cp -R ngrok /var/www/html/
