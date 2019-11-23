@@ -2,7 +2,7 @@
 This is Advance Phishing Tool V1.0
 
 # Requirements
-1. Root
+1. Root - Must
 2. Apache Server
 3. Internet
 
@@ -17,6 +17,6 @@ This is Advance Phishing Tool V1.0
 sg5479845@gmail.com
  
 # Support 
-Kali Linux
-Ubantu
+1 .Kali Linux
+2. ubantu
 
