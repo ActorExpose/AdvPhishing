@@ -5,6 +5,7 @@ This is Advance Phishing Tool V1.0
 1. Root - Must
 2. Apache Server
 3. Internet
+4. add repo on kali 
 
 # How to Intsall
 1. git clone https://github.com/Ignitetch/AdvPhishing.git
