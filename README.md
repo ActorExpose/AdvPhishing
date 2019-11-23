@@ -15,4 +15,8 @@ This is Advance Phishing Tool V1.0
 
 # Contact For Contribute
 sg5479845@gmail.com
+ 
+# Support 
+Kali Linux
+Ubantu
 
