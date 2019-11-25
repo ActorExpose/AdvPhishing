@@ -7,7 +7,7 @@ This is Advance Phishing Tool V1.0
 3. Internet
 4. add repo on kali 
 
-# How to Intsall
+# How to Intsall & Use
 1. git clone https://github.com/Ignitetch/AdvPhishing.git
 2. cd AdvPhishing
 3. chmod +x Ignite.sh
