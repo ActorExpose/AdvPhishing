@@ -14,8 +14,8 @@ This is Advance Phishing Tool V1.0
 4. ./Ignite.sh
   
   
-  Note : All password save on /var/www/html/
-  open new terminal - 
+ # Note : All password save on /var/www/html/
+  # open new terminal - 
   5. cd /var/www/html/
   6. ./password.sh
 
