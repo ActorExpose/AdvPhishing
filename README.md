@@ -2,8 +2,6 @@
 This is Advance Phishing Tool V1.0
 
 ![kali-2019-11-26-22-11-31](https://user-images.githubusercontent.com/55870659/69653886-e36f8a00-1099-11ea-994e-2505cbbbf273.png)
-![324744_a6db_2](https://user-images.githubusercontent.com/55870659/73335433-5f9e6d80-4295-11ea-8658-1f9ad81e35c6.jpg)
-
 
 # Requirements
 1. Root - Must
